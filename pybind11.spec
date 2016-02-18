@@ -1,6 +1,6 @@
 Name: pybind11		
-Version: 1.2	
-Release: 	1%{?dist}
+Version: 1.2
+Release: 	2%{?dist}
 Summary: Seamless operability between C++11 and Python
 
 Group:	 python	
@@ -10,6 +10,8 @@ Source0: https://github.com/wjakob/%{name}/archive/%{name}-%{version}.tgz
 
 BuildRequires: gcc-c++ gcc glibc-devel python-libs python-devel	cmake
 Requires: gcc-c++	
+
+%define debug_package %{nil}
 
 %description
 pybind11 is a lightweight header-only library that exposes C++ types in Python and vice versa, mainly to create Python bindings of existing C++ code.
@@ -35,6 +37,16 @@ make %{?_smp_mflags}
 
 
 %changelog
+* Thu Feb 18 2016 baoboa <baobabdev@gmail.com> 1.2-2
+- 
+
+* Thu Feb 18 2016 baoboa <baobabdev@gmail.com> 1.2-2
+- Remove debug build 
+
+* Thu Feb 18 2016 baoboa <baobabdev@gmail.com>
+- prepare for copr build 
+
+
 * Thu Feb 18 2016 baoboa <baobabdev@gmail.com> 1.2-1
 - new package built with tito, add cmake dependency
 
