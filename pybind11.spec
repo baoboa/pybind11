@@ -6,7 +6,7 @@ Summary: Seamless operability between C++11 and Python
 Group:	 python	
 License: BSD	
 URL:	 https://github.com/wjakob/pybind11	
-Source0: https://github.com/wjakob/%{name}/archive/%{name}-%{version}.tgz	
+Source0: https://github.com/wjakob/%{name}/archive/%{name}-%{version}-%{release}.tar.gz	
 
 BuildRequires: gcc-c++ gcc glibc-devel python-libs python-devel	cmake
 Requires: gcc-c++	
@@ -37,6 +37,15 @@ make %{?_smp_mflags}
 
 
 %changelog
+* Thu Feb 18 2016 baoboa <baobabdev@gmail.com> 1.2-2
+- Automatic commit of package [pybind11] release [1.2-2]. (baobabdev@gmail.com)
+
+* Thu Feb 18 2016 baoboa <baobabdev@gmail.com>
+- 
+
+* Thu Feb 18 2016 baoboa <baobabdev@gmail.com>
+- adjust source
+
 * Thu Feb 18 2016 baoboa <baobabdev@gmail.com> 1.2-2
 - 
 
